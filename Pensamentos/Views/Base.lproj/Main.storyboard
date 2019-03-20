@@ -13,12 +13,12 @@
         <!--Pensamentos-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Pensamentos" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="QuotesViewController" customModule="Pensamentos" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="13D-VR-A3o">
+                            <imageView userInteractionEnabled="NO" alpha="0.25" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="13D-VR-A3o">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xKR-aQ-13a">
@@ -30,19 +30,19 @@
                                 <blurEffect style="light"/>
                             </visualEffectView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Meb-Nj-jAs">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="333"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="333"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="Meb-Nj-jAs" secondAttribute="height" multiplier="750:666" id="FAC-ny-sLL"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pensamento" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="cTd-MW-8We">
-                                <rect key="frame" x="40" y="343" width="295" height="48"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="250" text="Pensamento" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="cTd-MW-8We">
+                                <rect key="frame" x="40" y="363" width="295" height="48"/>
                                 <fontDescription key="fontDescription" name="SavoyeLetPlain" family="Savoye LET" pointSize="40"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Autor" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WAS-hD-ATv">
-                                <rect key="frame" x="163" y="411" width="49.5" height="36"/>
+                                <rect key="frame" x="163" y="431" width="49.5" height="36"/>
                                 <fontDescription key="fontDescription" name="SavoyeLetPlain" family="Savoye LET" pointSize="30"/>
                                 <color key="textColor" red="0.75294117647058822" green="0.37647058823529411" blue="0.19215686274509802" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -51,7 +51,7 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="13D-VR-A3o" secondAttribute="bottom" id="3jt-Cn-Jpe"/>
-                            <constraint firstItem="Meb-Nj-jAs" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="9LV-jg-OBH"/>
+                            <constraint firstItem="Meb-Nj-jAs" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="9LV-jg-OBH"/>
                             <constraint firstItem="cTd-MW-8We" firstAttribute="top" secondItem="Meb-Nj-jAs" secondAttribute="bottom" constant="10" id="F8U-bL-Sys"/>
                             <constraint firstAttribute="trailing" secondItem="13D-VR-A3o" secondAttribute="trailing" id="FP7-38-dkN"/>
                             <constraint firstItem="xKR-aQ-13a" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Gh4-L1-fCw"/>
@@ -71,6 +71,13 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Pensamentos" image="quotes" id="7FB-NV-7fk"/>
+                    <connections>
+                        <outlet property="constraintTop" destination="F8U-bL-Sys" id="D8F-Ym-yoy"/>
+                        <outlet property="imageViewPhoto" destination="Meb-Nj-jAs" id="Efo-Ii-yhh"/>
+                        <outlet property="imageViewPhotoBackground" destination="13D-VR-A3o" id="Nx2-LV-Ppe"/>
+                        <outlet property="labelAuthor" destination="WAS-hD-ATv" id="adz-4T-Nwi"/>
+                        <outlet property="labelQuotes" destination="cTd-MW-8We" id="EbG-oi-xUW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -79,7 +86,7 @@
         <!--Configurações-->
         <scene sceneID="tdU-Rn-wTb">
             <objects>
-                <viewController id="ars-Jw-pDt" sceneMemberID="viewController">
+                <viewController id="ars-Jw-pDt" customClass="SettingsViewController" customModule="Pensamentos" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Q8L-Ol-ZZq">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -90,9 +97,12 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JJZ-dF-11z">
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="JJZ-dF-11z">
                                 <rect key="frame" x="163" y="58" width="51" height="31"/>
                                 <color key="onTintColor" red="0.75294117650000003" green="0.37647058820000001" blue="0.19215686269999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="changeAutoRefresh:" destination="ars-Jw-pDt" eventType="valueChanged" id="UOm-7b-auC"/>
+                                </connections>
                             </switch>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DUK-Vi-ILo">
                                 <rect key="frame" x="0.0" y="105" width="375" height="1"/>
@@ -110,6 +120,9 @@
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="8" minValue="5" maxValue="30" translatesAutoresizingMaskIntoConstraints="NO" id="OLm-ku-dz8">
                                 <rect key="frame" x="42" y="146" width="282" height="31"/>
                                 <color key="minimumTrackTintColor" red="0.75294117650000003" green="0.37647058820000001" blue="0.19215686269999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="changeTimeInterval:" destination="ars-Jw-pDt" eventType="valueChanged" id="70w-M5-4gq"/>
+                                </connections>
                             </slider>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nWg-ZE-v3i">
                                 <rect key="frame" x="24" y="152" width="10" height="18"/>
@@ -137,6 +150,9 @@
                                     <segment title="Escuro"/>
                                 </segments>
                                 <color key="tintColor" red="0.75294117650000003" green="0.37647058820000001" blue="0.19215686269999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="changeColorScheme:" destination="ars-Jw-pDt" eventType="valueChanged" id="abw-HB-u9R"/>
+                                </connections>
                             </segmentedControl>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mudar após 8 segundos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gDh-rv-wNP">
                                 <rect key="frame" x="105" y="122" width="165" height="18"/>
@@ -184,6 +200,12 @@
                         <viewLayoutGuide key="safeArea" id="luL-tL-p03"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Configurações" image="settings" id="McM-k5-co1"/>
+                    <connections>
+                        <outlet property="labelTimeInterval" destination="gDh-rv-wNP" id="FhJ-dq-oi9"/>
+                        <outlet property="segmentedColorScheme" destination="nhX-s0-mPS" id="xHd-s2-GPY"/>
+                        <outlet property="sliderTimeInterval" destination="OLm-ku-dz8" id="4Xt-vY-8Td"/>
+                        <outlet property="switchAutoRefresh" destination="JJZ-dF-11z" id="3y4-CS-VWH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eNN-wm-rjJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -195,6 +217,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="nT6-IP-g3f" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="zX5-uQ-UBG">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="selectedImageTintColor" red="0.75294117650000003" green="0.37647058820000001" blue="0.19215686269999999" alpha="1" colorSpace="calibratedRGB"/>

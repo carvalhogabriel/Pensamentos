@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		F2894CCF224169C000F93576 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2894CCE224169C000F93576 /* AppDelegate.swift */; };
-		F2894CD1224169C000F93576 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2894CD0224169C000F93576 /* ViewController.swift */; };
 		F2894CD4224169C000F93576 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2894CD2224169C000F93576 /* Main.storyboard */; };
 		F2894CD6224169C200F93576 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2894CD5224169C200F93576 /* Assets.xcassets */; };
 		F2894CD9224169C200F93576 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2894CD7224169C200F93576 /* LaunchScreen.storyboard */; };
@@ -16,6 +15,12 @@
 		F2894CEF224169C200F93576 /* PensamentosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2894CEE224169C200F93576 /* PensamentosUITests.swift */; };
 		F2894CFE22416A4500F93576 /* quotes.json in Resources */ = {isa = PBXBuildFile; fileRef = F2894CFC22416A4500F93576 /* quotes.json */; };
 		F2894CFF22416A4500F93576 /* Savoye LET.ttc in Resources */ = {isa = PBXBuildFile; fileRef = F2894CFD22416A4500F93576 /* Savoye LET.ttc */; };
+		F2894D022241794900F93576 /* QuotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2894D012241794900F93576 /* QuotesViewController.swift */; };
+		F2894D042241796B00F93576 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2894D032241796B00F93576 /* SettingsViewController.swift */; };
+		F2894D0A22417C0F00F93576 /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2894D0922417C0F00F93576 /* Quote.swift */; };
+		F2894D0D22417C3D00F93576 /* QuotesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2894D0C22417C3D00F93576 /* QuotesManager.swift */; };
+		F2894D0F22417C7200F93576 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2894D0E22417C7200F93576 /* Configuration.swift */; };
+		F2894D112242767400F93576 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F2894D102242767400F93576 /* Settings.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +43,6 @@
 /* Begin PBXFileReference section */
 		F2894CCB224169C000F93576 /* Pensamentos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pensamentos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2894CCE224169C000F93576 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F2894CD0224169C000F93576 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F2894CD3224169C000F93576 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F2894CD5224169C200F93576 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F2894CD8224169C200F93576 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +55,12 @@
 		F2894CF0224169C200F93576 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F2894CFC22416A4500F93576 /* quotes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = quotes.json; sourceTree = "<group>"; };
 		F2894CFD22416A4500F93576 /* Savoye LET.ttc */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Savoye LET.ttc"; sourceTree = "<group>"; };
+		F2894D012241794900F93576 /* QuotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesViewController.swift; sourceTree = "<group>"; };
+		F2894D032241796B00F93576 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		F2894D0922417C0F00F93576 /* Quote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
+		F2894D0C22417C3D00F93576 /* QuotesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesManager.swift; sourceTree = "<group>"; };
+		F2894D0E22417C7200F93576 /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
+		F2894D102242767400F93576 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,13 +111,14 @@
 		F2894CCD224169C000F93576 /* Pensamentos */ = {
 			isa = PBXGroup;
 			children = (
-				F2894D0022416A4D00F93576 /* Files */,
 				F2894CCE224169C000F93576 /* AppDelegate.swift */,
-				F2894CD0224169C000F93576 /* ViewController.swift */,
-				F2894CD2224169C000F93576 /* Main.storyboard */,
+				F2894D0022416A4D00F93576 /* Files */,
+				F2894D0B22417C2800F93576 /* Models */,
+				F2894D06224179B000F93576 /* Views */,
+				F2894D052241799500F93576 /* Controllers */,
 				F2894CD5224169C200F93576 /* Assets.xcassets */,
-				F2894CD7224169C200F93576 /* LaunchScreen.storyboard */,
 				F2894CDA224169C200F93576 /* Info.plist */,
+				F2894D102242767400F93576 /* Settings.bundle */,
 			);
 			path = Pensamentos;
 			sourceTree = "<group>";
@@ -137,6 +148,34 @@
 				F2894CFD22416A4500F93576 /* Savoye LET.ttc */,
 			);
 			path = Files;
+			sourceTree = "<group>";
+		};
+		F2894D052241799500F93576 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F2894D032241796B00F93576 /* SettingsViewController.swift */,
+				F2894D012241794900F93576 /* QuotesViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		F2894D06224179B000F93576 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F2894CD2224169C000F93576 /* Main.storyboard */,
+				F2894CD7224169C200F93576 /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F2894D0B22417C2800F93576 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F2894D0922417C0F00F93576 /* Quote.swift */,
+				F2894D0C22417C3D00F93576 /* QuotesManager.swift */,
+				F2894D0E22417C7200F93576 /* Configuration.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -247,6 +286,7 @@
 				F2894CD9224169C200F93576 /* LaunchScreen.storyboard in Resources */,
 				F2894CD6224169C200F93576 /* Assets.xcassets in Resources */,
 				F2894CFF22416A4500F93576 /* Savoye LET.ttc in Resources */,
+				F2894D112242767400F93576 /* Settings.bundle in Resources */,
 				F2894CD4224169C000F93576 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -272,8 +312,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F2894CD1224169C000F93576 /* ViewController.swift in Sources */,
+				F2894D0D22417C3D00F93576 /* QuotesManager.swift in Sources */,
+				F2894D0A22417C0F00F93576 /* Quote.swift in Sources */,
+				F2894D022241794900F93576 /* QuotesViewController.swift in Sources */,
 				F2894CCF224169C000F93576 /* AppDelegate.swift in Sources */,
+				F2894D0F22417C7200F93576 /* Configuration.swift in Sources */,
+				F2894D042241796B00F93576 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
